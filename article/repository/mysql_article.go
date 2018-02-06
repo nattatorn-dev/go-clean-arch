@@ -16,7 +16,6 @@ type mysqlArticleRepository struct {
 }
 
 func NewMysqlArticleRepository(Conn *sql.DB) ArticleRepository {
-
 	return &mysqlArticleRepository{Conn}
 }
 
